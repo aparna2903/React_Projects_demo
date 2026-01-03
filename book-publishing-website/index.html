@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author’s Choice - Book Publisher</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon"
+        href="https://www.codewithfaraz.com/tools/placeholder?size=25x25&bgColor=3498DB&textColor=FFFFFF&text=PP"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-book-half"></i> Author’s Choice</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#newly-added">Books</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#authors">Authors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <div class="hero-content">
+                        <h1>Unlock Worlds, <span>One Page</span> at a Time.</h1>
+                        <p class="lead-hero">Discover captivating stories, support talented authors, and embark on
+                            unforgettable literary journeys with Author’s Choice.</p>
+                        <div>
+                            <a href="#featured-books" class="btn btn-primary btn-lg me-2 mb-2 mb-md-0">Explore
+                                Bestsellers</a>
+                            <a href="#newly-added" class="btn btn-outline-primary btn-lg">Discover New Releases</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 d-none d-lg-block">
+                    <div class="hero-image-container">
+                        <img src="images/hero.jpg"
+                            alt="Elegant Book Display" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Author’s Choice</h2>
+                <p class="lead">Crafting literary journeys and empowering authors since 2024.</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="images/about.jpg"
+                        alt="About Us Image" class="img-fluid rounded shadow mb-4 mb-lg-0">
+                </div>
+                <div class="col-lg-6">
+                    <h3>Our Mission</h3>
+                    <p>At Author’s Choice, we are dedicated to discovering and nurturing literary talent. Our mission is to
+                        connect compelling stories with readers worldwide, fostering a vibrant community of authors and
+                        book lovers. We believe in the power of words to inspire, educate, and entertain.</p>
+                    <h3>Our Vision</h3>
+                    <p>We envision a world where every great story finds its audience. Through innovation,
+                        collaboration, and a commitment to quality, we aim to be a leading force in the publishing
+                        industry, championing diverse voices and literary excellence.</p>
+                    <a href="#contact" class="btn btn-primary mt-3">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-books" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Books</h2>
+                <p class="lead">Our latest releases and bestsellers making waves.</p>
+            </div>
+            <div class="swiper featured-books-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card book-card vanilla-tilt">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-1.webp"
+                                class="card-img-top" alt="Book Cover 1">
+                            <div class="card-body">
+                                <span class="genre-tag">Mystery</span>
+                                <h5 class="card-title">The Silent Clue</h5>
+                                <p class="card-text">A thrilling mystery that will keep you on the edge of your seat
+                                    until the very last page.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card book-card vanilla-tilt">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-2.webp"
+                                class="card-img-top" alt="Book Cover 2">
+                            <div class="card-body">
+                                <span class="genre-tag">Fantasy</span>
+                                <h5 class="card-title">The Dragon's Oath</h5>
+                                <p class="card-text">Embark on an epic journey through a magical realm filled with
+                                    adventure and wonder.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card book-card vanilla-tilt">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-3.webp"
+                                class="card-img-top" alt="Book Cover 3">
+                            <div class="card-body">
+                                <span class="genre-tag">Sci-Fi</span>
+                                <h5 class="card-title">Galactic Drift</h5>
+                                <p class="card-text">A futuristic adventure across distant star systems, exploring new
+                                    frontiers.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card book-card vanilla-tilt">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-4.webp"
+                                class="card-img-top" alt="Book Cover 4">
+                            <div class="card-body">
+                                <span class="genre-tag">Romance</span>
+                                <h5 class="card-title">Hearts of the Past</h5>
+                                <p class="card-text">A heartwarming tale of love that transcends time, capturing the
+                                    essence of true connection.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card book-card vanilla-tilt">
+                            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-5.webp"
+                                class="card-img-top" alt="Book Cover 5">
+                            <div class="card-body">
+                                <span class="genre-tag">Thriller</span>
+                                <h5 class="card-title">Locked In</h5>
+                                <p class="card-text">A high-stakes thriller where survival is everything, pushing
+                                    characters to their limits.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next d-none d-md-block"></div>
+                <div class="swiper-button-prev d-none d-md-block"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newly-added" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fresh Off The Press</h2>
+                <p class="lead">Check out the newest additions to our growing library.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card book-card vanilla-tilt h-100">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-6.webp"
+                            class="card-img-top" alt="New Book 1">
+                        <div class="card-body">
+                            <span class="genre-tag">Motivational</span>
+                            <h5 class="card-title">Rise Every Morning</h5>
+                            <p class="card-text">Rise Every Morning by Dr. Aanya Verma.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card book-card vanilla-tilt h-100">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-7.webp"
+                            class="card-img-top" alt="New Book 2">
+                        <div class="card-body">
+                            <span class="genre-tag">Historical Fiction</span>
+                            <h5 class="card-title">Beneath the Empire Sky</h5>
+                            <p class="card-text">Unravel ancient secrets in this captivating journey through history.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card book-card vanilla-tilt h-100">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-8.webp"
+                            class="card-img-top" alt="New Book 3">
+                        <div class="card-body">
+                            <span class="genre-tag">Poetry</span>
+                            <h5 class="card-title">Petals and Scars</h5>
+                            <p class="card-text">Petals and Scars by Noor Rahman.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card book-card vanilla-tilt h-100">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-9.webp"
+                            class="card-img-top" alt="New Book 4">
+                        <div class="card-body">
+                            <span class="genre-tag">Business</span>
+                            <h5 class="card-title">Lead with Clarity</h5>
+                            <p class="card-text">Lead with Clarity by Daniel Ross.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="authors" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Talented Authors</h2>
+                <p class="lead">Meet the creative minds behind your favorite stories.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="author-card">
+                        <img src="images/authors/author1.png"
+                            alt="Author Anna Brooks">
+                        <h5>Anna Brooks</h5>
+                        <p class="text-muted">Bestselling author of "The Silent Clue" series. Specializes in gripping
+                            mystery novels.</p>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">View Profile</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="author-card">
+                        <img src="images/authors/author2.png"
+                            alt="Author Nathan Cross">
+                        <h5>Nathan Cross</h5>
+                        <p class="text-muted">Creator of the "Locked In" thriller saga. Known for intricate
+                            world-building.</p>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">View Profile</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="author-card">
+                        <img src="images/authors/author3.png"
+                            alt="Author Jaxon Reid">
+                        <h5>Jaxon Reid</h5>
+                        <p class="text-muted">Award-winning Sci-Fi novelist, author of "Galactic Drift". Explores
+                            futuristic themes.</p>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">View Profile</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="author-card">
+                        <img src="images/authors/author4.png"
+                            alt="Author Thomas Wren">
+                        <h5>Thomas Wren</h5>
+                        <p class="text-muted">Master of contemporary fiction and short stories. Focuses on human
+                            relationships.</p>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="genres" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore by Genre</h2>
+                <p class="lead">Find your next read by browsing our diverse collections.</p>
+            </div>
+            <ul class="nav nav-pills justify-content-center mb-4" id="genreTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="fiction-tab" data-bs-toggle="tab" data-bs-target="#fiction"
+                        type="button" role="tab" aria-controls="fiction" aria-selected="true">Fiction</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="non-fiction-tab" data-bs-toggle="tab" data-bs-target="#non-fiction"
+                        type="button" role="tab" aria-controls="non-fiction" aria-selected="false">Non-Fiction</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="childrens-tab" data-bs-toggle="tab" data-bs-target="#childrens"
+                        type="button" role="tab" aria-controls="childrens" aria-selected="false">Children's</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="poetry-tab" data-bs-toggle="tab" data-bs-target="#poetry" type="button"
+                        role="tab" aria-controls="poetry" aria-selected="false">Poetry</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="genreTabsContent">
+                <div class="tab-pane fade show active genre-content" id="fiction" role="tabpanel"
+                    aria-labelledby="fiction-tab">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card book-card vanilla-tilt h-100">
+                                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-9.webp"
+                                    class="card-img-top" alt="Fiction Book 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lead with Clarity</h5>
+                                    <p class="card-text">Lead with Clarity by Daniel Ross.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card book-card vanilla-tilt h-100">
+                                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-7.webp"
+                                    class="card-img-top" alt="Fiction Book 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beneath the Empire Sky</h5>
+                                    <p class="card-text">Unravel ancient secrets in this captivating journey through
+                                        history.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade genre-content" id="non-fiction" role="tabpanel"
+                    aria-labelledby="non-fiction-tab">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card book-card vanilla-tilt h-100">
+                                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-3.webp"
+                                    class="card-img-top" alt="Non-Fiction Book 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Galactic Drift</h5>
+                                    <p class="card-text">A futuristic adventure across distant star systems, exploring
+                                        new frontiers.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade genre-content" id="childrens" role="tabpanel" aria-labelledby="childrens-tab">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card book-card vanilla-tilt h-100">
+                                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-6.webp"
+                                    class="card-img-top" alt="Children's Book 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rise Every Morning</h5>
+                                    <p class="card-text">Rise Every Morning by Dr. Aanya Verma.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade genre-content" id="poetry" role="tabpanel" aria-labelledby="poetry-tab">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card book-card vanilla-tilt h-100">
+                                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-cover-8.webp"
+                                    class="card-img-top" alt="Poetry Book 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Petals and Scars</h5>
+                                    <p class="card-text">Petals and Scars by Noor Rahman.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Publishing Services</h2>
+                <p class="lead">Empowering authors with comprehensive publishing solutions.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <i class="bi bi-pencil-square fs-1 text-primary mb-3"></i>
+                        <h4 class="card-title">Editing Services</h4>
+                        <p class="card-text">Professional manuscript editing, proofreading, and developmental feedback
+                            to polish your work.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <i class="bi bi-palette fs-1 text-primary mb-3"></i>
+                        <h4 class="card-title">Cover Design</h4>
+                        <p class="card-text">Eye-catching and genre-specific book cover design services that attract
+                            readers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <i class="bi bi-printer fs-1 text-primary mb-3"></i>
+                        <h4 class="card-title">Printing & Formatting</h4>
+                        <p class="card-text">High-quality print-on-demand and offset printing options, plus ebook
+                            formatting.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <i class="bi bi-megaphone fs-1 text-primary mb-3"></i>
+                        <h4 class="card-title">Marketing & Promotion</h4>
+                        <p class="card-text">Strategic marketing plans, social media promotion, and press release
+                            services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <i class="bi bi-globe2 fs-1 text-primary mb-3"></i>
+                        <h4 class="card-title">Global Distribution</h4>
+                        <p class="card-text">Reach readers worldwide through our extensive network of online and
+                            physical retailers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <i class="bi bi-person-check fs-1 text-primary mb-3"></i>
+                        <h4 class="card-title">Author Support</h4>
+                        <p class="card-text">Dedicated support throughout your publishing journey, from manuscript to
+                            market.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Authors & Readers Say</h2>
+                <p class="lead">Hear from those who've experienced our commitment to literature.</p>
+            </div>
+            <div class="swiper testimonial-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=60x60&bgColor=F1948A&textColor=FFFFFF&text=SK"
+                            alt="Testimonial User 1">
+                        <h5>Sarah K. (Author)</h5>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i>
+                        </div>
+                        <p>"Author’s Choice made my dream of becoming a published author a reality. Their support and
+                            professionalism were outstanding!"</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=60x60&bgColor=7FB3D5&textColor=FFFFFF&text=ML"
+                            alt="Testimonial User 2">
+                        <h5>Mark L. (Reader)</h5>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"I've discovered so many amazing books through Author’s Choice. Their selection is diverse and
+                            always high quality."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=60x60&bgColor=7DCEA0&textColor=FFFFFF&text=ER"
+                            alt="Testimonial User 3">
+                        <h5>Emily R. (Author)</h5>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p>"The editing team was fantastic. They helped me refine my manuscript and took it to the next
+                            level."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=60x60&bgColor=FAD7A0&textColor=FFFFFF&text=JP"
+                            alt="Testimonial User 4">
+                        <h5>James P. (Author)</h5>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"The cover design service exceeded my expectations. My book truly stands out on the shelves!"
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Upcoming Events & Book Launches</h2>
+                <p class="lead">Join us for exciting literary events and celebrations.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="event-card">
+                        <span class="event-date">JUL 25</span>
+                        <h4>Book Launch: "Urban Echoes"</h4>
+                        <p><i class="bi bi-clock me-2"></i>7:00 PM - 9:00 PM</p>
+                        <p><i class="bi bi-geo-alt me-2"></i>The Grand Library Hall, 45 Bookworm Ave.</p>
+                        <p>Celebrate the launch of "Urban Echoes" with the author. Readings, Q&A, and signed copies
+                            available.</p>
+                        <a href="#" class="btn btn-sm btn-primary">Event Details</a>
+                    </div>
+                    <div class="event-card">
+                        <span class="event-date">AUG 10</span>
+                        <h4>Virtual Author Chat: The Art of Storytelling</h4>
+                        <p><i class="bi bi-clock me-2"></i>3:00 PM - 4:30 PM (Online)</p>
+                        <p><i class="bi bi-camera-video me-2"></i>Live on Author’s Choice YouTube</p>
+                        <p>Join a panel of our acclaimed authors as they discuss the craft of storytelling. Submit your
+                            questions live!</p>
+                        <a href="#" class="btn btn-sm btn-primary">Join Live</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h4>Event Calendar</h4>
+                    <input type="text" id="eventCalendarFlatpickr" class="form-control mb-3"
+                        placeholder="Select a date to check events...">
+                    <div id="eventCalendarContainer"></div>
+                    <p class="mt-3 text-muted">Select a date to see if any events are scheduled. Dates with events will
+                        be highlighted (example functionality).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>From Our Blog</h2>
+                <p class="lead">Insights, tips, and news from the world of publishing.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card blog-post-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/5-tips-for-aspiring-authors.webp"
+                            alt="Blog Post 1">
+                        <div class="card-body">
+                            <p class="meta"><i class="bi bi-calendar3 me-1"></i> July 10, 2024 | <i
+                                    class="bi bi-person me-1"></i> Admin</p>
+                            <h5 class="card-title">5 Tips for Aspiring Authors</h5>
+                            <p class="card-text">Practical advice to help you get started on your writing journey and
+                                overcome common hurdles.</p>
+                            <a href="#" class="btn btn-link p-0 mt-auto">Read More <i
+                                    class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card blog-post-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/the-future-of-publishing-trends.webp"
+                            alt="Blog Post 2">
+                        <div class="card-body">
+                            <p class="meta"><i class="bi bi-calendar3 me-1"></i> July 5, 2024 | <i
+                                    class="bi bi-person me-1"></i> Editor's Desk</p>
+                            <h5 class="card-title">The Future of Publishing: Trends</h5>
+                            <p class="card-text">Exploring how technology and reader habits are shaping the book
+                                industry's landscape.</p>
+                            <a href="#" class="btn btn-link p-0 mt-auto">Read More <i
+                                    class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card blog-post-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/book%20publishing/book-review-galaxy-edge.webp"
+                            alt="Blog Post 3">
+                        <div class="card-body">
+                            <p class="meta"><i class="bi bi-calendar3 me-1"></i> June 28, 2024 | <i
+                                    class="bi bi-book me-1"></i> Reader's Corner</p>
+                            <h5 class="card-title">Book Review: "Galaxy's Edge"</h5>
+                            <p class="card-text">An in-depth review of the latest sci-fi blockbuster that's captivating
+                                readers worldwide.</p>
+                            <a href="#" class="btn btn-link p-0 mt-auto">Read More <i
+                                    class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="section-title">
+                        <h2>Stay Updated</h2>
+                        <p class="lead">Subscribe to our newsletter for the latest book releases, author news, and
+                            exclusive offers.</p>
+                    </div>
+                    <form id="newsletterForm" class="row g-3 justify-content-center">
+                        <div class="col-md-7">
+                            <label for="newsletterEmail" class="visually-hidden">Email address</label>
+                            <input type="email" class="form-control form-control-lg" id="newsletterEmail"
+                                placeholder="Enter your email address" required>
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-primary btn-lg">Subscribe Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p class="lead">Have questions or want to discuss your manuscript? We'd love to hear from you.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Contact Information</h4>
+                    <p><i class="bi bi-geo-alt-fill me-2 text-primary"></i>123 Literary Lane, Booksville, BK 54321, USA
+                    </p>
+                    <p><i class="bi bi-telephone-fill me-2 text-primary"></i>(123) 456-7890</p>
+                    <p><i class="bi bi-envelope-fill me-2 text-primary"></i>info@authorschoice.com</p>
+                    <h5 class="mt-4">Office Hours</h5>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM EST</p>
+                    <p>Saturday - Sunday: Closed</p>
+                    <div class="mt-4">
+                        <img src="https://www.codewithfaraz.com/tools/placeholder?size=600x300&bgColor=CCCCCC&textColor=FFFFFF&text=Office+Location+Map"
+                            alt="Office Location Map" class="img-fluid rounded" style="border:1px solid #ddd;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="bi bi-book-half"></i> Author’s Choice</h5>
+                    <p>Dedicated to bringing captivating stories to readers and supporting talented authors in their
+                        literary journey. We believe in the power of books to change lives.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#featured-books">Featured</a></li>
+                        <li><a href="#newly-added">New Books</a></li>
+                        <li><a href="#authors">Authors</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-geo-alt me-2"></i>123 Literary Lane, Booksville</p>
+                    <p><i class="bi bi-telephone me-2"></i>(123) 456-7890</p>
+                    <p><i class="bi bi-envelope me-2"></i>info@authorschoice.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear"></span> Author’s Choice. All Rights Reserved. |
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a><br>
+                  
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        xintegrity="sha512-RD/5gPzD/Y2hEpHLHOJ+K3U4K9Ea/HjJ14K1rGqH8/z/6/L9M3rRzXoP9zY3hKj2sN/P4R0j8rG/hP97/nQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
