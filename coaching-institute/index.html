@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Coaching | Responsive Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Elite<span>Academy</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Expert Coaching for Your Success</h1>
+        <p>
+          Join our specialized batches for Science, Math, and Competitive Exams.
+          Start your journey today!
+        </p>
+        <a href="#courses" class="btn-primary">View Courses</a>
+      </div>
+    </section>
+
+    <section id="courses" class="courses">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <i class="fas fa-flask"></i>
+          <h3>Science Batch</h3>
+          <p>In-depth conceptual clarity with weekly practical mock tests.</p>
+        </div>
+        <div class="course-card">
+          <i class="fas fa-square-root-variable"></i>
+          <h3>Advanced Math</h3>
+          <p>Shortcut techniques for competitive entrance exams and boards.</p>
+        </div>
+        <div class="course-card">
+          <i class="fas fa-user-tie"></i>
+          <h3>Soft Skills</h3>
+          <p>
+            Personality development and interview prep for graduating students.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Academic Consultation</h2>
+      <div class="contact-container">
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email Address" required />
+          <textarea
+            id="message"
+            placeholder="Which course are you interested in?"
+            rows="4"
+            required
+          ></textarea>
+          <button type="submit" class="btn-submit">Submit Inquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="logo">Elite<span>Academy</span></div>
+          <p>
+            Empowering students to achieve academic excellence through
+            personalized mentorship and expert guidance.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Our Courses</a></li>
+            <li><a href="#contact">Admission</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Office Hours</h3>
+          <ul>
+            <li>Mon - Fri: 9:00 AM - 7:00 PM</li>
+            <li>Saturday: 10:00 AM - 4:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Education Lane, Learning
+            City
+          </p>
+          <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+          <p><i class="fas fa-envelope"></i> info@eliteacademy.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Elite Academy Coaching Institute. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp Us</span>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
